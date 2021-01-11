@@ -31,6 +31,7 @@ ENV PATH="/usr/local/bin/chromedriver:${PATH}"
 # 3. Install selenium and scrapy in Python
 RUN pip install -U selenium
 RUN pip install -U Scrapy
+RUN pip install -U beautifulsoup4
 
 # 4. Finally, copy python code to image
 COPY . /home/site/wwwroot
